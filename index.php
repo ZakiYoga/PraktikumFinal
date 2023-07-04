@@ -1,3 +1,7 @@
+<?php 
+    require('./config/db.php')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,41 +14,81 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo-navbar">PrakWeb</div>
-        <navbar class="navbar">
-            <ul>
-                <li>
-                    <a href="/">Beranda</a>
-                </li>
-                <li><a href="/">Practicum Module</a></li>
-                <li><a href="/">Quiz</a></li>
-            </ul>
-        </navbar>
-        <div class="btn-container">
-            <a class="signup" href="./component/page/login.php">Sign Up</a>
-            <a class="login" href="./component/page/register.php">Login</a>
-        </div>
-    </header>
+    <?php require('./src/components/navbar.php'); ?>
     <main>
         <div class="container-main">
             <div class="hero-content">
-                <h2>Praktikum Pemrograman Web</h2>
-                <p>Belajar Mudah, Kapanpun dan dimanapun
+                <h2>Roast 'N Roll</h2>
+                <p>Indulge in the perfect blend of freshly roasted coffee and artisanal bread at Roast 'n Roll. Our
+                    passion for flavor and quality shines through every sip and bite.
                 </p>
-                <button>Lihat Modul</button>
+                <button>Order Now!</button>
             </div>
-            <div class="hero-img">
+            <div class="image-content">
+                <div class="hero-img-1">
+
+                </div>
+                <div class="hero-img-2">
+
+                </div>
+                <div class="hero-img-3">
+                </div>
             </div>
         </div>
-        <div class="main-content">
-            <table>
-                <tr>
-                    <th>
+        <div class="container-menus">
+            <div class="menu-item">
+                <h3>Menu 1</h3>
+                <img src="./assets/img/img-1.jpg" alt="Menu 1">
+                <button>Order</button>
+            </div>
+            <div class="menu-item">
+                <h3>Menu 2</h3>
+                <img src="./assets/img/img-2.jpg" alt="Menu 2">
+                <button>Order</button>
+            </div>
+            <div class="menu-item">
+                <h3>Menu 3</h3>
+                <img src="./assets/img/img-3.jpg" alt="Menu 3">
+                <button>Order</button>
+            </div>
+        </div>
+        <div class="container-about">
+            <div class="about-img">
 
-                    </th>
-                </tr>
-            </table>
+            </div>
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque fugit dolorem itaque
+                    eligendi, distinctio enim voluptatum amet soluta at? Impedit, consectetur debitis minima ratione
+                    exercitationem unde excepturi totam vitae?</p>
+            </div>
+        </div>
+        <div class="container-faq">
+            <div class="faq">
+
+            </div>
+            <div class="questions-faq">
+                <div class="question">
+
+                </div>
+                <div class="answer">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+
+                <div class="about">
+
+                </div>
+                <div class="footer-menus">
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p></p>
+            </div>
         </div>
     </main>
     <footer>
